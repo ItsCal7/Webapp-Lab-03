@@ -12,5 +12,20 @@ function popupClose(x)
 
 function showMyCart()
 {
-	alert("Show Cart");
+	if (document.getElementById('cart').style.display=='block')
+	{
+		document.getElementById('cart').style.display='none';
+	}
+	else
+	{
+		document.getElementById('cart').style.display='block';
+	}
 }
+
+function addToCart(x)
+{
+	document.getElementById("cartContent").innerHTML += x;
+	document.getElementById("cartContent").innerHTML += "<br>";
+}
+
+
